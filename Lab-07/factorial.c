@@ -25,6 +25,10 @@ int main() {
     int n;
     printf("Enter a number: ");
     scanf("%d", &n);
-    printf("%d! = %d\n", n, factorial(n));
+    while (n > 0) {
+        printf("Factorial of %d is %d\n", n, factorial(n));
+        printf("Enter a number: ");
+        scanf("%d", &n);
+    }
     return 0;
 }
